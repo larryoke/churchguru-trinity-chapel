@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F87108011EAE96CD00137CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108001EAE96CD00137CE0 /* AppDelegate.swift */; };
+		F87108031EAE96CD00137CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108021EAE96CD00137CE0 /* ViewController.swift */; };
+		F87108061EAE96CD00137CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87108041EAE96CD00137CE0 /* Main.storyboard */; };
+		F87108081EAE96CD00137CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87108071EAE96CD00137CE0 /* Assets.xcassets */; };
+		F871080B1EAE96CD00137CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */; };
+		F87108161EAE96CD00137CE0 /* Trinity_ChapelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108151EAE96CD00137CE0 /* Trinity_ChapelTests.swift */; };
+		F87108211EAE96CD00137CE0 /* Trinity_ChapelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108201EAE96CD00137CE0 /* Trinity_ChapelUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F87108121EAE96CD00137CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87107F51EAE96CD00137CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87107FC1EAE96CD00137CE0;
+			remoteInfo = "Trinity Chapel";
+		};
+		F871081D1EAE96CD00137CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87107F51EAE96CD00137CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87107FC1EAE96CD00137CE0;
+			remoteInfo = "Trinity Chapel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F87107FD1EAE96CD00137CE0 /* Trinity Chapel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trinity Chapel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87108001EAE96CD00137CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F87108021EAE96CD00137CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F87108051EAE96CD00137CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F87108071EAE96CD00137CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F871080A1EAE96CD00137CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F871080C1EAE96CD00137CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87108111EAE96CD00137CE0 /* Trinity ChapelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trinity ChapelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87108151EAE96CD00137CE0 /* Trinity_ChapelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_ChapelTests.swift; sourceTree = "<group>"; };
+		F87108171EAE96CD00137CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F871081C1EAE96CD00137CE0 /* Trinity ChapelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trinity ChapelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87108201EAE96CD00137CE0 /* Trinity_ChapelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_ChapelUITests.swift; sourceTree = "<group>"; };
+		F87108221EAE96CD00137CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87107FA1EAE96CD00137CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F871080E1EAE96CD00137CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87108191EAE96CD00137CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F87107F41EAE96CD00137CE0 = {
+			isa = PBXGroup;
+			children = (
+				F87107FF1EAE96CD00137CE0 /* Trinity Chapel */,
+				F87108141EAE96CD00137CE0 /* Trinity ChapelTests */,
+				F871081F1EAE96CD00137CE0 /* Trinity ChapelUITests */,
+				F87107FE1EAE96CD00137CE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F87107FE1EAE96CD00137CE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87107FD1EAE96CD00137CE0 /* Trinity Chapel.app */,
+				F87108111EAE96CD00137CE0 /* Trinity ChapelTests.xctest */,
+				F871081C1EAE96CD00137CE0 /* Trinity ChapelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87107FF1EAE96CD00137CE0 /* Trinity Chapel */ = {
+			isa = PBXGroup;
+			children = (
+				F87108001EAE96CD00137CE0 /* AppDelegate.swift */,
+				F87108021EAE96CD00137CE0 /* ViewController.swift */,
+				F87108041EAE96CD00137CE0 /* Main.storyboard */,
+				F87108071EAE96CD00137CE0 /* Assets.xcassets */,
+				F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */,
+				F871080C1EAE96CD00137CE0 /* Info.plist */,
+			);
+			path = "Trinity Chapel";
+			sourceTree = "<group>";
+		};
+		F87108141EAE96CD00137CE0 /* Trinity ChapelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F87108151EAE96CD00137CE0 /* Trinity_ChapelTests.swift */,
+				F87108171EAE96CD00137CE0 /* Info.plist */,
+			);
+			path = "Trinity ChapelTests";
+			sourceTree = "<group>";
+		};
+		F871081F1EAE96CD00137CE0 /* Trinity ChapelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F87108201EAE96CD00137CE0 /* Trinity_ChapelUITests.swift */,
+				F87108221EAE96CD00137CE0 /* Info.plist */,
+			);
+			path = "Trinity ChapelUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87107FC1EAE96CD00137CE0 /* Trinity Chapel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87108251EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity Chapel" */;
+			buildPhases = (
+				F87107F91EAE96CD00137CE0 /* Sources */,
+				F87107FA1EAE96CD00137CE0 /* Frameworks */,
+				F87107FB1EAE96CD00137CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trinity Chapel";
+			productName = "Trinity Chapel";
+			productReference = F87107FD1EAE96CD00137CE0 /* Trinity Chapel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F87108101EAE96CD00137CE0 /* Trinity ChapelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87108281EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity ChapelTests" */;
+			buildPhases = (
+				F871080D1EAE96CD00137CE0 /* Sources */,
+				F871080E1EAE96CD00137CE0 /* Frameworks */,
+				F871080F1EAE96CD00137CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87108131EAE96CD00137CE0 /* PBXTargetDependency */,
+			);
+			name = "Trinity ChapelTests";
+			productName = "Trinity ChapelTests";
+			productReference = F87108111EAE96CD00137CE0 /* Trinity ChapelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F871081B1EAE96CD00137CE0 /* Trinity ChapelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F871082B1EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity ChapelUITests" */;
+			buildPhases = (
+				F87108181EAE96CD00137CE0 /* Sources */,
+				F87108191EAE96CD00137CE0 /* Frameworks */,
+				F871081A1EAE96CD00137CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F871081E1EAE96CD00137CE0 /* PBXTargetDependency */,
+			);
+			name = "Trinity ChapelUITests";
+			productName = "Trinity ChapelUITests";
+			productReference = F871081C1EAE96CD00137CE0 /* Trinity ChapelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87107F51EAE96CD00137CE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ChurchGURU;
+				TargetAttributes = {
+					F87107FC1EAE96CD00137CE0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = M982783A59;
+						ProvisioningStyle = Automatic;
+					};
+					F87108101EAE96CD00137CE0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = M982783A59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F87107FC1EAE96CD00137CE0;
+					};
+					F871081B1EAE96CD00137CE0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = M982783A59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F87107FC1EAE96CD00137CE0;
+					};
+				};
+			};
+			buildConfigurationList = F87107F81EAE96CD00137CE0 /* Build configuration list for PBXProject "Trinity Chapel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87107F41EAE96CD00137CE0;
+			productRefGroup = F87107FE1EAE96CD00137CE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87107FC1EAE96CD00137CE0 /* Trinity Chapel */,
+				F87108101EAE96CD00137CE0 /* Trinity ChapelTests */,
+				F871081B1EAE96CD00137CE0 /* Trinity ChapelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87107FB1EAE96CD00137CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F871080B1EAE96CD00137CE0 /* LaunchScreen.storyboard in Resources */,
+				F87108081EAE96CD00137CE0 /* Assets.xcassets in Resources */,
+				F87108061EAE96CD00137CE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F871080F1EAE96CD00137CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F871081A1EAE96CD00137CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87107F91EAE96CD00137CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87108031EAE96CD00137CE0 /* ViewController.swift in Sources */,
+				F87108011EAE96CD00137CE0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F871080D1EAE96CD00137CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87108161EAE96CD00137CE0 /* Trinity_ChapelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87108181EAE96CD00137CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87108211EAE96CD00137CE0 /* Trinity_ChapelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F87108131EAE96CD00137CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87107FC1EAE96CD00137CE0 /* Trinity Chapel */;
+			targetProxy = F87108121EAE96CD00137CE0 /* PBXContainerItemProxy */;
+		};
+		F871081E1EAE96CD00137CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87107FC1EAE96CD00137CE0 /* Trinity Chapel */;
+			targetProxy = F871081D1EAE96CD00137CE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F87108041EAE96CD00137CE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87108051EAE96CD00137CE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F871080A1EAE96CD00137CE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87108231EAE96CD00137CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F87108241EAE96CD00137CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87108261EAE96CD00137CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity Chapel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-Chapel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F87108271EAE96CD00137CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity Chapel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-Chapel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F87108291EAE96CD00137CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity ChapelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-ChapelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trinity Chapel.app/Trinity Chapel";
+			};
+			name = Debug;
+		};
+		F871082A1EAE96CD00137CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity ChapelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-ChapelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trinity Chapel.app/Trinity Chapel";
+			};
+			name = Release;
+		};
+		F871082C1EAE96CD00137CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity ChapelUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-ChapelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Trinity Chapel";
+			};
+			name = Debug;
+		};
+		F871082D1EAE96CD00137CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M982783A59;
+				INFOPLIST_FILE = "Trinity ChapelUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.churchguru.Trinity-ChapelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Trinity Chapel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87107F81EAE96CD00137CE0 /* Build configuration list for PBXProject "Trinity Chapel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87108231EAE96CD00137CE0 /* Debug */,
+				F87108241EAE96CD00137CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87108251EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity Chapel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87108261EAE96CD00137CE0 /* Debug */,
+				F87108271EAE96CD00137CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87108281EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity ChapelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87108291EAE96CD00137CE0 /* Debug */,
+				F871082A1EAE96CD00137CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F871082B1EAE96CD00137CE0 /* Build configuration list for PBXNativeTarget "Trinity ChapelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F871082C1EAE96CD00137CE0 /* Debug */,
+				F871082D1EAE96CD00137CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87107F51EAE96CD00137CE0 /* Project object */;
+}
