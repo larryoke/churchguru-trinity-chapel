@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = NSURL(string: "https://trinitychapel.churchg.com/mobile")
+        let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
         let request = NSURLRequest(url: url! as URL)
         webView.loadRequest(request as URLRequest)
         
