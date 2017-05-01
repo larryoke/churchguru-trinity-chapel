@@ -15,13 +15,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+            //let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
+            //let request = NSURLRequest(url: url! as URL)
+            //self.webView.loadRequest(request as URLRequest)
         
         let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
         let request = NSURLRequest(url: url! as URL)
-        webView.loadRequest(request as URLRequest)
-        
-
+        let task = URLSession.shared.dataTask(with: url! as URL) { (data, response, error) in
+            // this is where the completion handler code goes
+            if let error = error {
+                print(error)
+            }else{
+                self.webView.loadRequest(request as URLRequest)
+            }
+        }
+        task.resume()
     }
 
     override func didReceiveMemoryWarning() {
