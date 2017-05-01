@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     
     @IBOutlet  var webView: UIWebView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,10 @@ class ViewController: UIViewController {
             //let request = NSURLRequest(url: url! as URL)
             //self.webView.loadRequest(request as URLRequest)
         
+        let image : UIImage = UIImage(named:"runner")!
+        imageView.image = image
+        self.view.addSubview(imageView)
+        
         let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
         let request = NSURLRequest(url: url! as URL)
         let task = URLSession.shared.dataTask(with: url! as URL) { (data, response, error) in
@@ -27,6 +34,8 @@ class ViewController: UIViewController {
             if let error = error {
                 print(error)
             }else{
+                self.imageView.removeFromSuperview()
+                self.imageView.image = nil
                 self.webView.loadRequest(request as URLRequest)
             }
         }
