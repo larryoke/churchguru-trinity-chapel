@@ -81,19 +81,12 @@ class ViewController: UIViewController, UIWebViewDelegate {
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if request.url?.scheme == "trinitychapel" {
             let index = request.url?.absoluteString.index((request.url?.absoluteString.startIndex)!, offsetBy: 37)
-            let paypalURL = request.url?.absoluteString.substring(from: index!)            
+            let paypalURL = request.url?.absoluteString.substring(from: index!)
             print( paypalURL!)
           
         }
         
         return true
-    }
-    
-    func getQueryStringParameter(url: String?, param: String) -> String? {
-        if let url = url, let urlComponents = NSURLComponents(string: url), let queryItems = (urlComponents.queryItems as [NSURLQueryItem]?) {
-            return queryItems.filter({ (item) in item.name == param }).first?.value!
-        }
-        return nil
     }
     
 }
