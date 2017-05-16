@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class ViewController: UIViewController, UIWebViewDelegate {
+class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControllerDelegate{
 
     
     @IBOutlet  var webView: UIWebView!
@@ -85,12 +85,19 @@ class ViewController: UIViewController, UIWebViewDelegate {
             let paypalURL = request.url?.absoluteString.substring(from: index!)
             print( paypalURL!)
           
-            //let safariVC = SFSafariViewController(URL: NSURL(string: paypalURL)!)
-            //self.presentViewController(safariVC, animated: true, completion: nil)
-            //safariVC.delegate = self
+            if let url = URL(string: paypalURL!) {
+                let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+                vc.delegate = self
+                present(vc, animated: true)
+            }
+
         }
         
         return true
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        dismiss(animated: true)
     }
     
 }
