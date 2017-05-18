@@ -65,9 +65,10 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
         if navigationType == UIWebViewNavigationType.linkClicked {
-            if let url = NSURL(string: "www.google.com"){
-                UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-            }
+            UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
+            //if let url = NSURL(string: "www.google.com"){
+                //UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+            //}
             return false
         }
         
@@ -80,6 +81,15 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
     }
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        
+        if navigationType == UIWebViewNavigationType.linkClicked {
+            let vcc = SFSafariViewController(url: request.url!, entersReaderIfAvailable: true)
+            vcc.delegate = self
+            present(vcc, animated: true)
+            return false
+        }
+
+        
         if request.url?.scheme == "trinitychapel" {
             let index = request.url?.absoluteString.index((request.url?.absoluteString.startIndex)!, offsetBy: 37)
             let paypalURL = request.url?.absoluteString.substring(from: index!)
