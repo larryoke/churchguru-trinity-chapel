@@ -13,9 +13,11 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
 
     
     @IBOutlet  var webView: UIWebView!
-    @IBOutlet weak var imageView: UIImageView!
+    //@IBOutlet weak var imageView: UIImageView!
     
+    var activityIndicator = UIActivityIndicatorView()
     
+    var imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +29,34 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
        
         //think
         webView.delegate = self
+        webView.frame = self.view.bounds
+        
+        
+        webView.mediaPlaybackRequiresUserAction = false
 
         
-        let image : UIImage = UIImage(named:"runner")!
-        imageView.image = image
+        
+        let image  = UIImage(named:"runner")!
+        imageView = UIImageView(image:image)
+        
+        
+        
         self.view.addSubview(imageView)
         
+        
+        activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        
+        let midY = self.view.frame.height / 2
+        let midX = self.view.frame.width / 2
+        activityIndicator.frame = CGRect(x: midX, y: midY, width: 100, height: 100)
+        let transform: CGAffineTransform = CGAffineTransform(scaleX: 2, y: 2)
+        activityIndicator.transform = transform
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
+        
         let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
-       
+        //let url = NSURL(string: "https://www.google.com")
+
 
         let request = NSURLRequest(url: url! as URL)
         
@@ -52,11 +74,10 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
                 
                 
             }else{
-                self.imageView.removeFromSuperview()
-                self.imageView.image = nil
-                
-                
-                self.webView.loadRequest(request as URLRequest)
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                    self.webView.loadRequest(request as URLRequest)
+                })
+               
             }
         }
         task.resume()
@@ -73,6 +94,12 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
         }
         
         return true
+    }
+    
+    func webViewDidFinishLoad(_ webView : UIWebView) {
+        activityIndicator.removeFromSuperview()
+        imageView.removeFromSuperview()
+        imageView.image = nil
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,7 +11,6 @@
 		F87108031EAE96CD00137CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108021EAE96CD00137CE0 /* ViewController.swift */; };
 		F87108061EAE96CD00137CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87108041EAE96CD00137CE0 /* Main.storyboard */; };
 		F87108081EAE96CD00137CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87108071EAE96CD00137CE0 /* Assets.xcassets */; };
-		F871080B1EAE96CD00137CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */; };
 		F87108161EAE96CD00137CE0 /* Trinity_ChapelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108151EAE96CD00137CE0 /* Trinity_ChapelTests.swift */; };
 		F87108211EAE96CD00137CE0 /* Trinity_ChapelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87108201EAE96CD00137CE0 /* Trinity_ChapelUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		F87108021EAE96CD00137CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F87108051EAE96CD00137CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F87108071EAE96CD00137CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F871080A1EAE96CD00137CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F871080C1EAE96CD00137CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87108111EAE96CD00137CE0 /* Trinity ChapelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trinity ChapelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87108151EAE96CD00137CE0 /* Trinity_ChapelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_ChapelTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				F87108021EAE96CD00137CE0 /* ViewController.swift */,
 				F87108041EAE96CD00137CE0 /* Main.storyboard */,
 				F87108071EAE96CD00137CE0 /* Assets.xcassets */,
-				F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */,
 				F871080C1EAE96CD00137CE0 /* Info.plist */,
 			);
 			path = "Trinity Chapel";
@@ -235,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F871080B1EAE96CD00137CE0 /* LaunchScreen.storyboard in Resources */,
 				F87108081EAE96CD00137CE0 /* Assets.xcassets in Resources */,
 				F87108061EAE96CD00137CE0 /* Main.storyboard in Resources */,
 			);
@@ -305,14 +301,6 @@
 				F87108051EAE96CD00137CE0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F87108091EAE96CD00137CE0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F871080A1EAE96CD00137CE0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
