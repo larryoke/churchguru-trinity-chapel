@@ -54,7 +54,7 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
         activityIndicator.startAnimating()
         self.view.addSubview(activityIndicator)
         
-        let url = NSURL(string: "https://faithchapel.churchg.com/mobi.htm")
+        let url = NSURL(string: "https://trinitychapel.churchg.com/mobi.htm")
         //let url = NSURL(string: "https://www.google.com")
 
 
@@ -66,7 +66,9 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
             if let error = error {
                 print(error)
                 
-                let alertVC = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
+                let alertVC = UIAlertController(
+                    title: "Server Connection Error",
+                    message: "There appears to be a connection problem. Please try again later", preferredStyle: .alert)
                 alertVC.addAction(UIAlertAction(title: "Close", style: .default, handler: { (ACTION :UIAlertAction!)in
                     exit(0)
                 }))
@@ -115,19 +117,31 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
             present(vcc, animated: true)
             return false
         }
-
+        
+        
         
         if request.url?.scheme == "trinitychapel" {
-            let index = request.url?.absoluteString.index((request.url?.absoluteString.startIndex)!, offsetBy: 37)
-            let paypalURL = request.url?.absoluteString.substring(from: index!)
-            print( paypalURL!)
-          
-            if let url = URL(string: paypalURL!) {
-                let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)
-                vc.delegate = self
-                present(vc, animated: true)
+            
+            if (request.url?.absoluteString.contains("approvalUrl"))!{
+                let index = request.url?.absoluteString.index((request.url?.absoluteString.startIndex)!, offsetBy: 37)
+                let paypalURL = request.url?.absoluteString.substring(from: index!)
+                print( paypalURL!)          
+                if let url = URL(string: paypalURL!) {
+                    let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true)
+                    vc.delegate = self
+                    present(vc, animated: true)
+                }
+                
+            }else if (request.url?.absoluteString.contains("closeIOS"))!{
+                let alertVC = UIAlertController(
+                    title: "Server Connection Error",
+                    message: "There appears to be a connection problem. Please try again later", preferredStyle: .alert)
+                alertVC.addAction(UIAlertAction(title: "Close", style: .default, handler: { (ACTION :UIAlertAction!)in
+                    exit(0)
+                }))
+                self.present(alertVC, animated: true, completion: nil)
             }
-
+            
         }
         
         return true
