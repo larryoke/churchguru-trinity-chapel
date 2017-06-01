@@ -118,7 +118,12 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
             return false
         }
         
-        
+        if (request.url?.absoluteString.contains("#GivePlace:donation"))!{
+            let vcc = SFSafariViewController(url: request.url!, entersReaderIfAvailable: true)
+            vcc.delegate = self
+            present(vcc, animated: true)
+            return false
+        }
         
         if request.url?.scheme == "trinitychapel" {
             
