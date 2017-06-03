@@ -118,10 +118,8 @@ class ViewController: UIViewController, UIWebViewDelegate , SFSafariViewControll
             return false
         }
         
-        if (request.url?.absoluteString.contains("#GivePlace:donation"))!{
-            let vcc = SFSafariViewController(url: request.url!, entersReaderIfAvailable: true)
-            vcc.delegate = self
-            present(vcc, animated: true)
+        if (request.url?.absoluteString.contains("paypal.com"))!{
+            UIApplication.shared.open(request.url!, options: [:])
             return false
         }
         
